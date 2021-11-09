@@ -1,0 +1,15 @@
+{
+  "name": "cwh",
+  "version": "1.0.0",
+  "description": "this is a package we created while creating and exploring express",
+  "main": "index.js",
+  "scripts": {
+    "test": "app.js"
+  },
+  "author": "ragini sharma",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pug": "^3.0.2"
+  }
+}
