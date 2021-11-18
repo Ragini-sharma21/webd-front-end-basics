@@ -1,0 +1,53 @@
+
+*{
+    margin:0;
+    padding : 0;
+}
+    ul{
+    display: flex;
+    flex-direction : row;
+}
+nav{
+    background-color: grey;
+}
+li{
+    list-style: none;
+    padding : 3px 17px;
+}
+
+a{ 
+    text-decoration : none;
+    color: white;
+    font-weight: bold;
+}
+.container{
+    margin : 12px auto;
+   
+    max-width:70%;
+}
+h1{
+    text-align: center;
+}
+
+input,textarea{
+    display:block;
+    padding :3px;
+    margin : 15px auto;
+    width : 60%;
+    outline : none;
+    border : 2px solid black;
+    border-radius:5px;
+}
+.btn{
+    display: block;
+    padding : 5px 12px;
+    color: black;
+    background:grey;
+    font-weight:bold;
+    font-size: 15px;
+    margin:4px auto;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius:9px;
+
+} 
