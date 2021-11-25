@@ -5,7 +5,7 @@ const app = express(); // we have made the express app
 const port = 80;
 // EXPRESS SPECIFIC STUFF
 app.use('/static',express.static('static')) //'static' is the folder name
-app.use(express.urlencoded()) //help lrta hai form ke data ko express tak laane ke liye ]
+app.use(express.urlencoded()) //help krta hai form ke data ko express tak laane ke liye ]
 
 //PUG SPECIFIC STUFF
 app.set('view engine', 'pug');
@@ -22,7 +22,7 @@ app.post('/',(req,res)=>{
     gender = req.body.gender
     more = req.body.more
     let outputToWrite = `the name of the client is ${name},${age} years old , ${gender}, ${more}`
-    fs.writeFileSync('output.txt',outputToWrite)
+    fs.writeFileSync('output.txt',outputToWrite)  // output.txt file mein data store hoga 
     const params = {'message': 'Your form has been successfully submitted'}
     res.status(200).render('index.pug',params);
 
